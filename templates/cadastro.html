@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro - Watech</title>
+</head>
+<body>
+    <h2>Crie sua conta na Watech</h2>
+    
+    <form action="/signup" method="POST">
+        <label>Nome Completo:</label><br>
+        <input type="text" name="nome_user" required><br><br>
+
+        <label>E-mail:</label><br>
+        <input type="email" name="email" pattern="[a-zA-Z0-9._%+-]+@+[a-zA-Z0-9._-]+\.[A-Za-z]{2,}(\.[A-Za-z]{2,})?" required><br><br>
+
+        <label>Senha:</label><br>
+        <input type="password" name="senha" required><br><br>
+
+        <label>Data de Nascimento:</label><br>
+        <input type="date" name="data_nascimento" required><br><br>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>
